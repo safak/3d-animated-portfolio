@@ -5,7 +5,7 @@ import Portfolio from "./components/portfolio/Portfolio"
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='container'>
       <Hero/>
       <Services/>
       <Portfolio/>
