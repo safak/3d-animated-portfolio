@@ -1,0 +1,10 @@
+1) For text animation
+   ===> react-type-animation
+
+2) For Profile Photo background animation
+   ===> motion.dev   
+   To use motion use shall define initial value prop and animate value prop with transition.
+
+3) For 3D objects
+   ===> npm i three @react-three/fiber
+   ===> npm i @react-three/drei   
