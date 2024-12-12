@@ -1,6 +1,9 @@
 import "./hero.css";
 import Speech from "./Speech";
 import { motion } from "motion/react";
+import { Canvas } from "@react-three/fiber";
+import Shape from "./Shape";
+import { Suspense } from "react";
 
 //NOTE - to animate the Left Section's components.
 const awardVariants = {
@@ -182,6 +185,11 @@ const Hero = () => {
       {/* //IMP - Middle Section Profile img */}
       <div className="bg">
         {/* 3d */}
+        <Canvas>
+          <Suspense fallback="loading...">
+            <Shape />
+          </Suspense>
+        </Canvas>
         <div className="hImg">
           <img src="/siddharth.png" alt="" />
         </div>
