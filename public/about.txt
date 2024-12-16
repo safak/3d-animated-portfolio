@@ -22,3 +22,12 @@
    
 6) To convert this computer.glb file to React Component
    ===> npx gltfjsx computer.glb
+
+7) To receive email entered at contact section by client, 
+   you can use Email JS   (EmailJS.com)
+   ===> npm i @emailjs/browser
+
+
+8) To make website load fast use (Dynamic import in App.jsx)
+   Lazy Loading
+   ===> npm i react-lazyload

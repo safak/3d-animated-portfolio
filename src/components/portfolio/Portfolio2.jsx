@@ -1,12 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./portfolio.css";
-import {
-  animate,
-  motion,
-  useInView,
-  useScroll,
-  useTransform,
-} from "motion/react";
+import "./portfolio2.css";
+import { motion, useInView, useScroll, useTransform } from "motion/react";
 
 const items = [
   {
@@ -76,7 +70,7 @@ const textVariants = {
     transition: {
       duration: 0.5,
       ease: "easeInOut",
-      staggerChildren: 0.08,
+      staggerChildren: 0.05,
     },
   },
 };
@@ -114,11 +108,29 @@ const Portfolio = () => {
   const [containerDistance, setContainerDistance] = useState(0);
   const ref = useRef(null);
 
+  // useEffect(() => {
+  //   if (ref.current) {
+  //     const rect = ref.current.getBoundingClientRect();
+  //     setContainerDistance(rect.left);
+  //   }
+  // }, []);
+
+  // FIX: Re-calculate when screen size changes
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setContainerDistance(rect.left);
-    }
+    const calculateDistance = () => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        setContainerDistance(rect.left);
+      }
+    };
+
+    calculateDistance();
+
+    window.addEventListener("resize", calculateDistance);
+
+    return () => {
+      window.removeEventListener("resize", calculateDistance);
+    };
   }, []);
 
   const { scrollYProgress } = useScroll({ target: ref });
@@ -165,7 +177,7 @@ const Portfolio = () => {
             fill="none"
             stroke="#dd4c62"
             strokeWidth={20}
-            style={{ pathLenght: scrollYProgress }}
+            style={{ pathLength: scrollYProgress }}
             transform="rotate(-90 80 80)"
           />
         </svg>

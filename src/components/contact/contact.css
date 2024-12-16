@@ -1,2 +1,79 @@
 .contact {
+  height: 100%;
+  display: flex;
+  gap: 100px;
+}
+
+.cSection {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+lebel {
+  font-size: 13px;
+}
+
+.formButton {
+  background-color: #dd4c62;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+  }
+
+  .cSection {
+    width: 100%;
+  }
+
+  .cSection:first-child {
+    height: 60%;
+  }
+
+  .cSection:last-child {
+    height: 40%;
+  }
 }
