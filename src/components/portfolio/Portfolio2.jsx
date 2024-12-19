@@ -33,10 +33,10 @@ const items = [
   },
   {
     id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Vaastu_Estate.png",
+    title: "Vaastu_Estate",
+    desc: "A sleek, responsive & interactive real estate frontend web app built with Tailwind CSS, Web3Forms, Framer Motion, and Toastify Notifications.",
+    link: "https://vaastu-estate.netlify.app/",
   },
 ];
 
