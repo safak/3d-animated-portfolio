@@ -5,10 +5,10 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "Anime_Webpage.png",
+    title: "Anime_Gaming_Webpage",
+    desc: "This responsive webpage is build using React, Vite, Tailwind, react-icons, GSAP. It is a clone of Award Winning Website Zentry.",
+    link: "https://anime-gaming-website.netlify.app/",
   },
   {
     id: 2,
