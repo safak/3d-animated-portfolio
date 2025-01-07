@@ -10,12 +10,12 @@ const items = [
     desc: "This responsive webpage is build using React, Vite, Tailwind, react-icons, GSAP. It is a clone of Award Winning Website Zentry.",
     link: "https://anime-gaming-website.netlify.app/",
   },
-  {
+   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/Hi-Me",
+    title: "Modern Social Media Application",
+    desc: "Next Gen Social Media Application with create posts, likes, comment, Upload image, updating profile, signup, signin functionality. Tech used NextJs, Neon, Postgres, TailwindCSS, Typescript, Shadcn, etc.",
+    link: "https://next-social-media-app-rho.vercel.app/",
   },
   {
     id: 3,
