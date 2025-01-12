@@ -19,14 +19,22 @@ const items = [
   },
   {
     id: 3,
+<<<<<<< HEAD
     img: "HeartSwipe.png",
+=======
+    img: "/p3.jpg",
+>>>>>>> c1b2f93b758fea5f647d0eaee6611481254951b5
     title: "HeartSwipe",
     desc: "Tinder Clone: A responsive mobile app featuring JWT auth, user Signup/Login/Logout, Zustand, Tailwind, Profile image upload, Swipe Right/Left, Real-time chat (socket.io), notifications, matching algorithm, and mobile-friendly design.",
     link: "https://heart-swipe.onrender.com",
   },
   {
     id: 4,
+<<<<<<< HEAD
     img: "ChatBuzz_Homepage.png",
+=======
+    img: "/p4.jpg",
+>>>>>>> c1b2f93b758fea5f647d0eaee6611481254951b5
     title: "ChatBuzz",
     desc: "Realtime Chat App with Signup, Login and Logout facilities, Multiple themes, Profile Picture update, Online users toggle switch, MongoDB, Cloudinary, CORS, TailwindCSS, DaisyUI, Axios, Lucid-react & Socket.io",
     link: "https://fullstack-chat-app-hiww.onrender.com",

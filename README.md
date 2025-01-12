@@ -1,3 +1,3 @@
-# Lama Dev Animated 3D Portfolio Website Project
+# 3D Animated Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# https://stunning-kleicha-2b34e9.netlify.app/
