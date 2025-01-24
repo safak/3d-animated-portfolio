@@ -12,19 +12,22 @@ const Speech = () => {
         <TypeAnimation
           sequence={[
             1000,
-            "Same substring at the start will only be typed out once, initially",
+            "Full-Stack",
             1000,
-            "Lorem ipsum dolor sit amet lerinat consectetur adipisicing. ",
+            "DevOps",
+            1000,
+            "Three.js",
+            1000,
+            "E-commerce",
             1000,
           ]}
           wrapper="span"
           speed={40}
           deletionSpeed={60}
-          // omitDeletionAnimation
           repeat={Infinity}
         />
       </div>
-      <img src="/man.png" alt="" />
+      <img src="/man.png" alt="man" className="bubbleImg" />
     </motion.div>
   );
 };

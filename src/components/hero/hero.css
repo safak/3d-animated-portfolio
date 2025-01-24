@@ -224,42 +224,105 @@
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
+    flex-direction: row; /* Keep the same layout as desktop */
+    height: auto; /* Allow the height to adjust naturally */
+    overflow: visible;
   }
 
   .bg {
-    height: 60%;
+    height: 80%; /* Maintain a smaller height for background */
   }
 
   .hSection {
-    width: 100%;
+    width: 50%; /* Match desktop layout */
+    height: auto; /* Adjust height dynamically */
+    padding: 12px; /* Add padding for spacing */
   }
 
   .hSection.left {
-    align-items: center;
-    text-align: center;
-    gap: 36px;
+    align-items: flex-start; /* Keep alignment as desktop */
+    text-align: left;
+    gap: 26px; /* Adjust spacing */
   }
 
   .hTitle {
-    font-size: 48px;
+    font-size: 39px; /* Slightly smaller than desktop but large enough */
+    margin-top: 0px; /* Add margin for spacing */
   }
 
   .awards {
-    width: 100%;
+    width: 80%; /* Adjust size to maintain visibility */
   }
 
   .awardList {
-    justify-content: center;
+    justify-content: flex-start; /* Align awards properly */
+    gap: 8px; /* Increase spacing between awards */
   }
 
-  .hSection.right {
-    justify-content: end;
+  .hImg {
+    height: 70%; /* Adjust image height for visibility */
+    margin: auto; /* Center the image */
   }
 
-  .follow,
-  .bubbleContainer,
+  .follow {
+    display: flex; /* Keep it visible */
+    gap: 8px;
+    width: auto;
+  }
+
+  .bubbleContainer {
+    display: flex; /* Ensure bubbles are visible */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 12px; /* Add spacing */
+    width: 100%;
+  }
+
+  .bubble {
+    width: calc(50% - 12px); /* Ensure bubbles fit without overlapping */
+  }
+
   .certificate {
-    display: none;
+    display: flex; /* Make certificates visible */
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .contactButton {
+    position: relative;
+  }
+
+  .circleText {
+    letter-spacing: 2px;
+    font-size: 16px; /* Adjust text size */
+  }
+
+  .arrow {
+    width: 60px; /* Adjust arrow size */
+    height: 60px;
+  }
+}
+/* Adjust the Speech Dialog Box for Mobile */
+@media (max-width: 768px) {
+  .bubbleContainer {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align the content */
+    gap: 12px; /* Add spacing between bubble and image */
+  }
+
+  .bubble {
+    width: 100%; /* Adjust width for mobile view */
+    padding: 11px; /* Add padding for spacing */
+    font-size: 14px; /* Adjust font size for better readability */
+    line-height: 1.5; /* Improve text readability */
+  }
+
+  .bubbleImg {
+    width: 50px; /* Adjust image size for mobile */
+    height: 50px;
+    object-fit: cover; /* Ensure image doesn't stretch */
+    margin-top: -70px;
   }
 }

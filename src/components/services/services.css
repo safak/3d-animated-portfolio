@@ -119,18 +119,89 @@
     width: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .services {
+    flex-direction: column; /* Stack everything vertically */
     align-items: center;
-    justify-content: center;
+    gap: 16px; /* Add spacing between sections */
   }
 
   .sSection {
-    width: 100%;
+    width: 100%; /* Full width for all sections */
+    padding: 16px; /* Add padding for spacing */
   }
 
   .sSection.right {
-    display: none;
+    display: block; /* Ensure the 3D model is visible */
+    width: 100%; /* Occupy full width on mobile */
+    height: auto; /* Let the height adjust dynamically */
+  }
+
+  .sTitle {
+    font-size: 48px; /* Reduce title size for mobile */
+    margin-bottom: 16px; /* Adjust spacing below the title */
+    text-align: center; /* Center-align the title */
+  }
+
+  .serviceList {
+    gap: 12px; /* Reduce the gap between service items */
+  }
+
+  .service {
+    width: 90%; /* Reduce service width for mobile */
+    padding: 12px; /* Smaller padding for compact layout */
+    border-radius: 12px; /* Slightly smaller border radius */
+  }
+
+  .serviceIcon {
+    width: 40px; /* Reduce icon size */
+    height: 40px;
+  }
+
+  .serviceIcon img {
+    width: 20px; /* Adjust image size */
+    height: 20px;
+  }
+
+  .serviceInfo h2 {
+    font-size: 16px; /* Smaller font size for titles */
+  }
+
+  .serviceInfo h3 {
+    font-size: 12px; /* Smaller font size for descriptions */
+  }
+
+  .counterList {
+    width: 100%; /* Full width for counters */
+    flex-wrap: wrap; /* Allow counters to wrap */
+    justify-content: center; /* Center counters */
+    gap: 16px; /* Add spacing between counters */
+    margin-top: 16px; /* Adjust spacing above counters */
+  }
+
+  .counter {
+    width: 40%; /* Reduce counter width to fit more counters */
+    align-items: center; /* Center-align counters */
+    gap: 8px; /* Maintain spacing between elements */
+  }
+
+  .counter h1 {
+    font-size: 36px; /* Reduce counter number size */
+  }
+
+  .counter p {
+    font-size: 12px; /* Smaller font size for text */
+    text-align: center; /* Center-align text */
+  }
+
+  .bgCanvas {
+    width: 100%; /* Make the 3D model span full width */
+    height: 800px; /* Increase height to emphasize the 3D model */
+    margin-top: 6px; /* Add spacing above the 3D model */
+  }
+
+  .services .bgCanvas canvas {
+    width: 100%; /* Ensure the canvas adjusts to mobile width */
+    height: 100%; /* Maintain the aspect ratio */
   }
 }
