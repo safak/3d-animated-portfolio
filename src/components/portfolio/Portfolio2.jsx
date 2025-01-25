@@ -13,7 +13,7 @@ const items = [
   {
     id: 2,
     img: "Hi-Me.png",
-    title: "Modern Social Media Application",
+    title: "Hi-Me Modern Social Media Application",
     desc: "Next Gen Social Media Application with create posts, likes, comment, Upload image, updating profile, signup, signin functionality. Tech used NextJs, Neon, Postgres, TailwindCSS, Typescript, Shadcn, etc.",
     link: "https://next-social-media-app-rho.vercel.app/",
   },
