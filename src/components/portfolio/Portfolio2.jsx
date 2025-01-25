@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     img: "code-smith.png",
-    title: "CodeSmith - SAAS Code Editor",
+    title: "CodeSmith-SAAS Code Editor",
     desc: "A Full Stack Code Editor with features like code execution, Adding/Sharing Snippets, multiple Programming languages support, User Authentication with clerk, Convex DB, Webhooks, Zustand, Framer Motion, TailwindCSS, Piston API, Payment with Lemon Squeezy, etc.",
     link: "https://code-smith-saas-code-editor-a6esi973v.vercel.app/",
   },
