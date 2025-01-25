@@ -1,0 +1,33 @@
+1) For text animation
+   ===> react-type-animation
+
+2) For Profile Photo background animation
+   ===> motion.dev   
+   To use motion use shall define initial value prop and animate value prop with transition.
+
+3) For 3D objects 
+   ===> npm i three @react-three/fiber
+   ===> npm i @react-three/drei   
+
+4) For 3D Product
+   ===> select 3D Product
+   ===> Download and Extract
+   ===> Replace the image with which you want to display
+   ===> now convert the gITF file to gITB file (use gITF pipleline)
+   ===> npm i -g gitf-pipeline (install in terminal outside application)
+
+5) Get inside the macbook_pro_2021 folder enter "cmd"
+   ===> gltf-pipeline -i model.gltf -b
+   Rename it as 'computer.glb'   
+   
+6) To convert this computer.glb file to React Component
+   ===> npx gltfjsx computer.glb
+
+7) To receive email entered at contact section by client, 
+   you can use Email JS   (EmailJS.com)
+   ===> npm i @emailjs/browser
+
+
+8) To make website load fast use (Dynamic import in App.jsx)
+   Lazy Loading
+   ===> npm i react-lazyload
