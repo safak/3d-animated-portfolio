@@ -5,10 +5,10 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "Anime_Webpage.png",
-    title: "Anime_Gaming_Webpage",
-    desc: "This responsive webpage is build using React, Vite, Tailwind, react-icons, GSAP. It is a clone of Award Winning Website Zentry.",
-    link: "https://anime-gaming-website.netlify.app/",
+    img: "code-smith.png",
+    title: "CodeSmith - SAAS Code Editor",
+    desc: "A Full Stack Code Editor with features like code execution, Adding/Sharing Snippets, multiple Programming languages support, User Authentication with clerk, Convex DB, Webhooks, Zustand, Framer Motion, TailwindCSS, Piston API, Payment with Lemon Squeezy, etc.",
+    link: "https://code-smith-saas-code-editor-a6esi973v.vercel.app/",
   },
   {
     id: 2,
@@ -19,32 +19,24 @@ const items = [
   },
   {
     id: 3,
-<<<<<<< HEAD
     img: "HeartSwipe.png",
-=======
-    img: "/p3.jpg",
->>>>>>> c1b2f93b758fea5f647d0eaee6611481254951b5
     title: "HeartSwipe",
     desc: "Tinder Clone: A responsive mobile app featuring JWT auth, user Signup/Login/Logout, Zustand, Tailwind, Profile image upload, Swipe Right/Left, Real-time chat (socket.io), notifications, matching algorithm, and mobile-friendly design.",
     link: "https://heart-swipe.onrender.com",
   },
   {
     id: 4,
-<<<<<<< HEAD
-    img: "ChatBuzz_Homepage.png",
-=======
     img: "/p4.jpg",
->>>>>>> c1b2f93b758fea5f647d0eaee6611481254951b5
     title: "ChatBuzz",
     desc: "Realtime Chat App with Signup, Login and Logout facilities, Multiple themes, Profile Picture update, Online users toggle switch, MongoDB, Cloudinary, CORS, TailwindCSS, DaisyUI, Axios, Lucid-react & Socket.io",
     link: "https://fullstack-chat-app-hiww.onrender.com",
   },
   {
     id: 5,
-    img: "/Vaastu_Estate.png",
-    title: "Vaastu_Estate",
-    desc: "A sleek, responsive & interactive real estate frontend web app built with Tailwind CSS, Web3Forms, Framer Motion, and Toastify Notifications.",
-    link: "https://vaastu-estate.netlify.app/",
+    img: "Anime_Webpage.png",
+    title: "Anime_Gaming_Webpage",
+    desc: "This responsive webpage is build using React, Vite, Tailwind, react-icons, GSAP. It is a clone of Award Winning Website Zentry.",
+    link: "https://anime-gaming-website.netlify.app/",
   },
 ];
 
