@@ -1,3 +1,104 @@
+.contact,
+.contact * {
+  box-sizing: border-box;
+}
+
 .contact {
-    
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  gap: clamp(24px, 5vw, 80px);
+}
+
+.contact .cSection {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: clamp(16px, 3vw, 32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .cSection:last-child {
+  background-color: rgba(2, 2, 45, 0.187);
+  margin-block: 32px;
+  border-radius: 50% 0;
+}
+
+.contact form {
+  width: min(100%, 640px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(2, 2, 45, 0.066);
+  padding: clamp(20px, 4vw, 50px);
+  border-radius: clamp(20px, 4vw, 50px);
+}
+
+.contact .formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font: inherit;
+  background-color: #fff;
+  color: #222;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #777;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact label {
+  font-size: 13px;
+}
+
+.contact .formButton {
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dd4c62;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact .cSection {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .contact .cSection:last-child {
+    min-height: 160px;
+    margin: 0;
+  }
 }
