@@ -10,8 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@emailjs/browser": "^5.0.3",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@tabler/icons-react": "^3.51.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "clsx": "^2.1.1",
+    "cn": "^0.5.2",
+    "motion": "^14.14.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.6.1",
+    "react-type-animation": "^3.2.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

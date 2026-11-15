@@ -1,0 +1,135 @@
+.services {
+  min-height: 100vh; 
+  overflow: hidden;
+  display: flex;
+}
+
+.section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section.right {
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineWrap {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+.sTitle {
+  font-size: 88px;
+  margin-bottom: 24px;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service {
+  width: 50%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #2f213f;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.serviceIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceIcon img {
+  width: 24px;
+  height: 24px;
+}
+
+.serviceInfo h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.serviceInfo h3 {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.service:nth-child(1) .serviceIcon {
+  background-color: #dd4c62;
+}
+.service:nth-child(2) .serviceIcon {
+  background-color: #025656;
+}
+.service:nth-child(3) .serviceIcon {
+  background-color: #6c5c0c;
+}
+
+/* Wide laptops: cards breathe a little more */
+@media (max-width: 1536px) {
+  .service {
+    width: 70%;
+  }
+}
+
+/* Laptops: smaller title, cards fill the column */
+@media (max-width: 1280px) {
+  .sTitle { font-size: 64px; }
+  .service { width: 100%; }
+}
+
+/* Tablets: two 50% columns no longer fit → stack them */
+@media (max-width: 1024px) {
+  .services {
+    flex-direction: column;
+    gap: 48px;
+    padding: 96px 32px;
+  }
+  .section { width: 100%; }
+  .sTitle { font-size: 48px; }
+  /* timeline now sits below the cards, still animated */
+}
+
+/* Phones: drop the animated band, tighten everything */
+@media (max-width: 768px) {
+  .services {
+    gap: 32px;
+    padding: 64px 20px;
+  }
+  .sTitle {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .section.right { display: none; }
+  .service {
+    padding: 20px 16px;
+    gap: 12px;
+    border-radius: 16px;
+  }
+  .serviceIcon { width: 40px; height: 40px; }
+  .serviceIcon img { width: 20px; height: 20px; }
+  .serviceInfo h2 { font-size: 16px; margin-bottom: 4px; }
+  .serviceInfo h3 { font-size: 12px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .sTitle { font-size: 30px; }
+}

@@ -1,0 +1,220 @@
+.hero {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  isolation: isolate;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+  z-index: 1;
+}
+
+.hImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.hTitle {
+  margin-top: 50px;
+  font-size: 100px;
+  color: pink;
+}
+
+.hTitle span {
+  color: white;
+}
+
+.awards {
+  width: 30%;
+}
+
+.awards p {
+  font-size: 14px;
+  color: #ddd;
+  margin: 16px 0px;
+}
+
+.awardList {
+  display: flex;
+  gap: 8px;
+}
+
+.awardList img {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.scroll {
+  margin-bottom: 50px;
+  width: max-content;
+}
+
+.hSection.right {
+  align-items: end;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: #2f204e;
+  border-bottom-right-radius: 10px;
+}
+
+.follow img {
+  width: 20px;
+  height: 20px;
+}
+
+.followTextContainer {
+  width: 20px;
+  height: 20px;
+}
+
+.followText {
+  background-color: #dd4c62;
+  font-size: 12px;
+  rotate: 90deg;
+  width: max-content;
+  height: 100%;
+  transform-origin: left top;
+  transform: translateY(-20px);
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+}
+
+.contactLink {
+  margin-bottom: 50px;
+}
+
+.contactButton {
+  position: relative;
+}
+
+.circleText {
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1536px) {
+  .hTitle {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bg {
+    height: 60%;
+    top: auto;
+    bottom: 0;
+  }
+
+  .hImg {
+    height: 100%;
+  }
+
+  .hTitle {
+    font-size: 88px;
+  }
+
+  .awards {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg {
+    height: 50%;
+  }
+
+  .hTitle {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .bg {
+    height: 60%;
+  }
+
+  .hSection {
+    width: 100%;
+  }
+
+  .hSection.left {
+    align-items: center;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .hTitle {
+    font-size: 48px;
+  }
+
+  .awards {
+    width: 100%;
+  }
+
+  .awardList {
+    justify-content: center;
+  }
+
+  .hSection.right {
+    justify-content: end;
+  }
+
+  .follow {
+    display: none;
+  }
+}
